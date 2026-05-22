@@ -1,4 +1,141 @@
-CIDPRO_Book/
-│
-├── index.html
-├── protected/
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CIDPRO Book - Digital Content</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        button:hover {
+            background: #764ba2;
+        }
+        .error {
+            color: red;
+            margin-top: 10px;
+            display: none;
+        }
+        .download-links {
+            display: none;
+            text-align: left;
+        }
+        .download-links a {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            background: #f0f0f0;
+            text-decoration: none;
+            border-radius: 5px;
+            color: #667eea;
+            font-weight: bold;
+        }
+        .download-links a:hover {
+            background: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 CIDPRO Book</h1>
+        <p>Digital Content Access</p>
+        <p style="font-size: 14px; color: #999;">Enter your purchase password to download exclusive digital content</p>
+        
+        <div id="passwordForm">
+            <input type="password" id="password" placeholder="Enter password" autocomplete="off">
+            <button onclick="checkPassword()">Access Content</button>
+            <div class="error" id="error">Invalid password. Please try again.</div>
+        </div>
+
+        <div class="download-links" id="downloadLinks">
+            <h3 style="text-align: left;">Download Resources:</h3>
+            <a href="content/chapter1.pdf" download>📄 Chapter 1 - PDF</a>
+            <a href="content/chapter2.pdf" download>📄 Chapter 2 - PDF</a>
+            <a href="content/supplementary_material.zip" download>📦 Supplementary Materials</a>
+            <a href="content/code_samples.zip" download>💻 Code Samples</a>
+            <button onclick="logout()" style="margin-top: 20px; background: #ccc; color: #333;">Logout</button>
+        </div>
+    </div>
+
+    <script>
+        // CHANGE THIS PASSWORD - use a strong, unique password
+        const CORRECT_PASSWORD = "CIDPRO2026Secure"; // Example - change this!
+        
+        function checkPassword() {
+            const input = document.getElementById('password').value;
+            if (input === CORRECT_PASSWORD) {
+                document.getElementById('passwordForm').style.display = 'none';
+                document.getElementById('downloadLinks').style.display = 'block';
+                localStorage.setItem('cidpro_authenticated', 'true');
+            } else {
+                document.getElementById('error').style.display = 'block';
+                document.getElementById('password').value = '';
+            }
+        }
+        
+        function logout() {
+            localStorage.removeItem('cidpro_authenticated');
+            document.getElementById('downloadLinks').style.display = 'none';
+            document.getElementById('passwordForm').style.display = 'block';
+            document.getElementById('error').style.display = 'none';
+            document.getElementById('password').value = '';
+        }
+        
+        // Check if already authenticated
+        window.addEventListener('load', function() {
+            if (localStorage.getItem('cidpro_authenticated') === 'true') {
+                document.getElementById('passwordForm').style.display = 'none';
+                document.getElementById('downloadLinks').style.display = 'block';
+            }
+        });
+        
+        // Allow Enter key
+        document.getElementById('password').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') checkPassword();
+        });
+    </script>
+</body>
+</html>
