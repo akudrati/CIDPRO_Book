@@ -2,7 +2,7 @@
 
 # Access Instructions
 
-The digital content provided here is available exclusively to purchasers of the CIDPRO Book, with a selection of resources made available free of charge to the wider community.
+The digital content provided here is available exclusively to purchasers of the # Identity and Access Management Exam Prep Guide Book, with a selection of resources made available free of charge to the wider community.
 
 Free Resources (No Book Purchase Required)
 
@@ -11,15 +11,15 @@ The following guides can be downloaded, used, and shared freely. No book purchas
 - Digital Download Guide #3: IAM Certificates
 - Digital Download Guide #4: Who to Follow in the Industry
 - Digital Download Guide #6: Full Glossary
-- Appendix A
+- Appendix A: Other books and publications by the author
 
 # Accessing Premium Content
 
 # To unlock the remaining digital resources:
 
-- Purchase the CIDPRO Book from Amazon or any other authorized retailer where it is available.
-- Locate the access password provided in your copy of the book. The password can be found in the opening section or on the final page.
-- Use the password to open the protected content, whether it is provided as a single PDF, multiple PDF files, or a ZIP archive available in this repository.
+- Purchase the CIDPRO Book from Amazon or any other authorised retailer where it is available.
+- Locate the access password provided in your copy of the book. The password can be found in the opening section or on the final page of the book.
+- Use the password to open the protected content, whether it is provided as a single PDF, multiple PDF files available in this repository.
 
 # Important Notice
 
