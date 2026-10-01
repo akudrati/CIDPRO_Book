@@ -1,4 +1,4 @@
-# CIDPRO Book – Digital Companion Content
+# Identity and Access Management (CIDPRO) Exam Prep Guide Book – Digital Companion Content
 
 # Access Instructions
 
@@ -17,7 +17,7 @@ The following guides can be downloaded, used, and shared freely. No book purchas
 
 # To unlock the remaining digital resources:
 
-- Purchase the CIDPRO Book from Amazon or any other authorised retailer where it is available.
+- Purchase the Identity and Access Management(CIDPRO) Exam Prep Guide Book from Amazon or any other authorised retailer where it is available.
 - Locate the access password provided in your copy of the book. The password can be found in the opening section or on the final page of the book.
 - Use the password to open the protected content, whether it is provided as a single PDF, multiple PDF files available in this repository.
 
