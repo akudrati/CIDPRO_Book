@@ -23,6 +23,7 @@ The following guides can be downloaded, used, and shared freely. No book purchas
 
 # Important Notice
 
-# Access to premium content is restricted to authorized users. Sharing, distributing, or accessing protected materials without permission is prohibited. All content is protected by copyright and intellectual property laws.
+# Access to premium content is restricted to authorized users. Sharing, distributing, or accessing protected materials without permission is prohibited. 
+# All content is protected by copyright and intellectual property laws.
 
-# © CIDPRO. All rights reserved.
+# © Abbas Kudrati. All rights reserved.
